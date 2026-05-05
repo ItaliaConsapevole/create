@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create array</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <button onclick="update()">Aggiorna</button>
+            <input type="file" id="fileInput" accept=".json" multiple>Importa</input>
+            <button onclick="addRow(0)">Aggiungi dopo</button>
+            <button onclick="addRow(1)">Aggiungi ad un id</button>
+            <button onclick="deleteRow()">Elimina riga</button>
+            <button onclick="exportJSON()">Esporta dati in .json</button>
+        </div>
+    </nav>
+    <div class="container">
+        <table>
+            <thead id="head"></thead>
+            <tbody id="content"></tbody>
+        </table>
+    </div>
+</body>
+    <script src="script.js"></script>
+</html>
